@@ -1,6 +1,6 @@
 /* by FN — IDENTIDADE VISUAL E LAYOUT
    Não é necessário editar este arquivo para cadastrar produtos.
-   Ajustes gerais de cores e tipografia: variáveis em :root.
+   Ajustes gerais de cores e tipografia: variáveis em :root. 
 */
 :root{--bg:#f8f7f4;--paper:#fff;--soft:#eeece7;--ink:#292925;--mute:#777770;--line:#e2dfd8;--olive:#535d4f;--width:1260px}
     *{box-sizing:border-box}
@@ -150,8 +150,8 @@ footer{background:#eeece6;padding:72px 0 28px}
 .collection-section{padding-bottom:30px}
 .collection-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .collection-card{display:block;min-width:0}
-.collection-image{background:var(--soft);aspect-ratio:4/3;overflow:hidden}
-.collection-image img{height:100%;object-fit:cover;transition:transform .4s}
+.collection-image{background:var(--soft);aspect-ratio:1/1;overflow:hidden}
+.collection-image img{width: 100%;height:100%;object-fit:cover;display: block;transition:transform .4s}
 .collection-card:hover .collection-image img{transform:scale(1.04)}
 .collection-image .image-placeholder{min-height:0;height:100%}
 .collection-info{display:flex;justify-content:space-between;gap:15px;padding:17px 0}
