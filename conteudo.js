@@ -27,9 +27,6 @@ window.BYFN = {
     titulo: "Design para viver cada detalhe.",
     subtitulo: "Coleções de objetos decorativos para diferentes momentos, estilos e ambientes. Feitos em família, com cuidado e atenção aos detalhes.",
     botao: "Explorar coleção"
-    // ,
-    // destaqueTitulo: "Peças para cada história.",
-    // destaqueTexto: "Do Natal à decoração do cotidiano: criações que dão personalidade aos ambientes."
   },
   catalogo: {
     etiqueta: "COLEÇÕES BY FN",
@@ -49,9 +46,9 @@ window.BYFN = {
     texto3: "Começamos com peças de decoração natalina e seguimos criando objetos que possam fazer parte da sua casa em diferentes momentos do ano."
   },
   diferenciais: [
-    { simbolo: "♡", titulo: "Feito em família", texto: "Dedicação e proximidade em cada etapa." },
-    { simbolo: "◇", titulo: "Filamentos selecionados", texto: "Escolha cuidadosa de matéria-prima e materiais." },
-    { simbolo: "✧", titulo: "Atenção aos detalhes", texto: "Design e acabamento pensados com cuidado." }
+    { titulo: "Feito em família", texto: "Dedicação e proximidade em cada etapa." },
+    { titulo: "Filamentos selecionados", texto: "Escolha cuidadosa de matéria-prima e materiais." },
+    { titulo: "Atenção aos detalhes", texto: "Design e acabamento pensados com cuidado." }
   ],
   atendimento: {
     titulo: "Estamos aqui para ajudar.",
