@@ -1,0 +1,11 @@
+by FN — Versão com capa alinhada e Google Sheets como base única
+
+1. Envie index.html, styles.css, script.js, conteudo.js e a pasta imagens/ para a raiz do repositório GitHub.
+2. O Google Sheets já está conectado pela URL da API no conteudo.js. Não há produtos nem coleções codificados localmente.
+3. Para as 3 imagens fixas, envie os arquivos para imagens/ e edite SOMENTE: marca.logo, marca.imagemPrincipal e marca.imagemSobre no conteudo.js.
+4. Logo vazio = assinatura tipográfica by FN. Imagem de capa ou família vazia = espaço neutro de imagem em breve.
+5. Produtos/coleções/fotos: cadastre na planilha; fotos precisam de URL HTTPS pública de imagem e acessível diretamente pelo navegador.
+6. A planilha controla nomes, preços, categorias, descrições, links e fotos; o site não precisa de novas alterações para produtos.
+7. Se a API ficar indisponível, o site informa a falha em vez de mostrar produtos antigos.
+
+O projeto não exige Node.js. Basta abrir index.html ou publicar pelo GitHub Pages.
