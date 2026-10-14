@@ -26,9 +26,10 @@ window.BYFN = {
     etiqueta: "BY FN • DESIGN & DECORAÇÃO",
     titulo: "Design para viver cada detalhe.",
     subtitulo: "Coleções de objetos decorativos para diferentes momentos, estilos e ambientes. Feitos em família, com cuidado e atenção aos detalhes.",
-    botao: "Explorar coleção",
-    destaqueTitulo: "Peças para cada história.",
-    destaqueTexto: "Do Natal à decoração do cotidiano: criações que dão personalidade aos ambientes."
+    botao: "Explorar coleção"
+    // ,
+    // destaqueTitulo: "Peças para cada história.",
+    // destaqueTexto: "Do Natal à decoração do cotidiano: criações que dão personalidade aos ambientes."
   },
   catalogo: {
     etiqueta: "COLEÇÕES BY FN",
