@@ -74,7 +74,7 @@
            href="${href}"
            target="_blank"
            rel="noopener noreferrer">
-           ${escapeHTML(label)} ↗
+           ${escapeHTML(label)}
          </a>`
       : '';
   };
@@ -122,7 +122,7 @@
               <h2>Nossas coleções.</h2>
             </div>
             <a class="underlink" href="#/produtos">
-              Ver todos os produtos ↗
+              Ver todos os produtos
             </a>
           </div>
 
@@ -212,7 +212,7 @@
 
             ${brief
               ? `<a class="btn outline" href="#/sobre">
-                   Conheça nossa história ↗
+                   Conheça nossa história
                  </a>`
               : `<p>${escapeHTML(s.texto3)}</p>`
             }
@@ -223,23 +223,19 @@
   }
 
   function benefits() {
-    return `
-      <section class="wrap">
-        <div class="benefits">
-          ${(data.diferenciais || []).map(x => `
-            <div class="benefit">
-              <div class="symbol">
-                ${escapeHTML(x.simbolo || '✧')}
-              </div>
-
-              <h3>${escapeHTML(x.titulo)}</h3>
-              <p>${escapeHTML(x.texto)}</p>
-            </div>
-          `).join('')}
-        </div>
-      </section>
-    `;
-  }
+  return `
+    <section class="wrap">
+      <div class="benefits">
+        ${(data.diferenciais || []).map(x => `
+          <div class="benefit">
+            <h3>${escapeHTML(x.titulo)}</h3>
+            <p>${escapeHTML(x.texto)}</p>
+          </div>
+        `).join('')}
+      </div>
+    </section>
+  `;
+}
 
   // INSTAGRAM
 
@@ -304,7 +300,7 @@
           <a href="#/produtos" class="btn">
             ${escapeHTML(
               data.inicio.botao || 'Explorar coleção'
-            )} ↗
+            )}
           </a>
         </div>
 
@@ -328,7 +324,7 @@
             </div>
 
             <a href="#/produtos" class="underlink">
-              Explorar coleção ↗
+              Explorar coleção
             </a>
           </div>
 
@@ -564,7 +560,7 @@
       /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)
         ? `<a class="underlink"
               href="mailto:${escapeHTML(mail)}">
-             Enviar e-mail ↗
+             Enviar e-mail
            </a>`
         : '';
 
@@ -746,7 +742,7 @@
         `<a href="${ig}"
             target="_blank"
             rel="noopener noreferrer">
-            Instagram ↗
+            Instagram
          </a>`
       );
     }
@@ -757,7 +753,7 @@
         `<a href="${shop}"
             target="_blank"
             rel="noopener noreferrer">
-            Shopee ↗
+            Shopee
          </a>`
       );
     }
@@ -937,51 +933,58 @@
   // INICIAR SITE
 
   async function boot() {
-    // O Google Sheets é a fonte única de produtos e coleções.
+    // O Google Sheets continua sendo a única fonte do catálogo.
     data = {
       ...data,
       colecoes: [],
       produtos: []
     };
 
-    if (endpoint) {
+    // Exibe a interface imediatamente, sem depender da conexão.
+    initializeUI();
+
+    const banner = document.querySelector('#integrationStatus');
+
+    if (!endpoint) {
+      if (banner) {
+        banner.textContent = 'Integração com Google Sheets não configurada.';
+        banner.hidden = false;
+      }
+      return;
+    }
+
+    // Até três tentativas, permitindo conexões mais lentas.
+    for (let tentativa = 1; tentativa <= 3; tentativa++) {
       try {
-        data = convertSheet(await getJSONP(endpoint));
+        const resposta = await getJSONP(endpoint, 25000);
 
-        console.info(
-          'by FN: catálogo carregado do Google Sheets'
-        );
-      } catch (err) {
-        console.warn(
-          'by FN: Google Sheets indisponível',
-          err
-        );
+        data = convertSheet(resposta);
 
-        const banner =
-          document.querySelector('#integrationStatus');
+        render();
 
         if (banner) {
-          banner.textContent =
-            'Não foi possível carregar o catálogo agora. ' +
-            'Tente atualizar a página em alguns instantes.';
-
-          banner.hidden = false;
+          banner.hidden = true;
         }
-      }
-    } else {
-      const banner =
-        document.querySelector('#integrationStatus');
 
-      if (banner) {
-        banner.textContent =
-          'Integração com Google Sheets não configurada.';
+        console.info('by FN: catálogo carregado do Google Sheets');
+        return;
 
-        banner.hidden = false;
+      } catch (erro) {
+        console.warn(
+          `by FN: falha na tentativa ${tentativa}`,
+          erro
+        );
+
+        if (tentativa < 3) {
+          await new Promise(resolve => setTimeout(resolve, 1500));
+        }
       }
     }
 
-    initializeUI();
+    if (banner) {
+      banner.textContent =
+        'Não foi possível carregar o catálogo. Atualize a página para tentar novamente.';
+      banner.hidden = false;
+    }
   }
-
-  boot();
 })();
