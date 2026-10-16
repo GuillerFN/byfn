@@ -270,7 +270,6 @@
             )}
           </div>
 
-          <div class="social-icon">◎</div>
         </div>
       </section>
     `;

@@ -70,7 +70,6 @@ header{position:sticky;top:0;z-index:20;background:rgba(248,247,244,.97);border-
 .social-banner h2{font-size:clamp(37px,5vw,65px);margin:16px 0;color:var(--ink)}
 .social-banner p{max-width:490px;font-size:13px;color:var(--mute);margin-bottom:28px}
 .social-layout{display:flex;justify-content:space-between;align-items:center;gap:30px}
-.social-icon{font-size:150px;color:var(--ink);opacity:.12}
 .social-layout{display:flex;justify-content:space-between;align-items:center;gap:30px}
 .social-icon{font-size:150px;opacity:.2}
 .page-title{padding:76px 0 45px}
