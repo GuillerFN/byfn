@@ -3,7 +3,7 @@
   "marca": "by FN",
   "colecoes": [
     {
-      "": "natalino",
+      "id": "natalino",
       "nome": "Natalino",
       "descricao": "Enfeites e detalhes especiais para o Natal",
       "imagem_url": "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/colecao_natalino.png",
@@ -11,7 +11,7 @@
       "ativa": true
     },
     {
-      "": "casa",
+      "id": "casa",
       "nome": "Decoração para Casa",
       "descricao": "Design e decoração para diferentes ambientes",
       "imagem_url": "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/colecao_decoracao_casa.png",
