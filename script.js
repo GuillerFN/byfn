@@ -140,7 +140,6 @@
                     <h3>${escapeHTML(c.nome)}</h3>
                     <p>${escapeHTML(c.descricao || '')}</p>
                   </div>
-                  <span aria-hidden="true">↗</span>
                 </div>
               </a>
             `).join('')}
