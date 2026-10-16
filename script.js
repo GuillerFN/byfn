@@ -152,10 +152,13 @@
   // PRODUTOS
 
   function card(p) {
-    return `
-      <a class="card"
-         href="#/produto/${encodeURIComponent(p.id)}">
+  const productUrl = `#/produto/${encodeURIComponent(p.id)}`;
+  const shopeeUrl = allowedUrl(p.shopee);
 
+  return `
+    <div class="card">
+
+      <a href="${productUrl}" class="card-product-link">
         <div class="product-img">
           ${picture(p.imagens?.[0], p.nome)}
 
@@ -169,14 +172,21 @@
             <h3>${escapeHTML(p.nome)}</h3>
             <small>${escapeHTML(collectionName(p))}</small>
           </div>
-
-          <span class="price">
-            ${price(p.preco)}
-          </span>
         </div>
       </a>
-    `;
-  }
+
+      ${shopeeUrl
+        ? `<a class="card-buy-button"
+              href="${shopeeUrl}"
+              target="_blank"
+              rel="noopener noreferrer">
+              Comprar na Shopee
+           </a>`
+        : ''}
+
+    </div>
+  `;
+}
 
   const grid = items =>
     items.length
@@ -952,7 +962,9 @@
     // Até três tentativas, permitindo conexões mais lentas.
     for (let tentativa = 1; tentativa <= 3; tentativa++) {
       try {
-        const resposta = await getJSONP(endpoint, 25000);
+        const respostaHTTP = await fetch('catalogo.json', { cache: 'no-store' });
+        if (!respostaHTTP.ok) throw new Error('Arquivo do catálogo indisponível');
+        const resposta = await respostaHTTP.json();
 
         data = convertSheet(resposta);
 

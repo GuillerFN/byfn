@@ -1,0 +1,38 @@
+name: Atualizar catalogo by FN
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13,43 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-catalogo
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositorio
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Atualizar JSON a partir da planilha
+        run: python3 scripts/sync_catalogo.py
+
+      - name: Publicar apenas se houver alteracoes
+        run: |
+          if git diff --quiet -- catalogo.json; then
+            echo "Catalogo sem alteracoes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalogo.json
+          git commit -m "Atualiza catalogo a partir do Google Sheets"
+          git pull --rebase origin main
+          git push origin HEAD:main

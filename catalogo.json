@@ -1,0 +1,100 @@
+{
+  "sucesso": true,
+  "colecoes": [
+    {
+      "id": "natalino",
+      "nome": "Natalino",
+      "descricao": "Enfeites e detalhes especiais para o Natal",
+      "imagem_url": "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/colecao_natalino.png",
+      "ordem": 1,
+      "ativa": true
+    },
+    {
+      "id": "casa",
+      "nome": "Decoração para Casa",
+      "descricao": "Design e decoração para diferentes ambientes",
+      "imagem_url": "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/colecao_decoracao_casa.png",
+      "ordem": 2,
+      "ativa": true
+    },
+    {
+      "id": "meninas",
+      "nome": "Decoração para Meninas",
+      "descricao": "Peças delicadas e criativas para decorar",
+      "imagem_url": "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/colecao_decoracao_menina.png",
+      "ordem": 3,
+      "ativa": true
+    }
+  ],
+  "produtos": [
+    {
+      "id": "gnomo-natalino",
+      "nome": "Gnomo Natalino Premium",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Gnomo decorativo de 15 cm para o Natal",
+      "descricao_completa": "Peça de estética minimalista para mesas, estantes e aparadores.",
+      "material": "Filamento de impressão 3D selecionado",
+      "dimensoes": "15 cm de altura",
+      "cores": "Consultar anúncio",
+      "shopee_url": "https://shopee.com.br/Gnomo-Natalinos-Decorativo-Premium-Grande-15-cm-Enfeites-de-Natal-Minimalistas-para-Mesa-Estante-e-Sala-i.1420021654.22295377757",
+      "instagram_url": "",
+      "destaque": true,
+      "disponivel": true,
+      "ordem": 1,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/gnomo_grande_solo.png"
+      ]
+    },
+    {
+      "id": "kit-2-gnomos",
+      "nome": "Kit 2 Gnomos Natalinos",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Dupla de gnomos natalinos minimalistas",
+      "descricao_completa": "Conjunto decorativo pensado para composições natalinas.",
+      "material": "Filamento de impressão 3D selecionado",
+      "dimensoes": "Consultar anúncio",
+      "cores": "Consultar anúncio",
+      "shopee_url": "https://shopee.com.br/Kit-2-Gnomos-Natalinos-Decorativos-Premium-Par-de-Enfeites-de-Natal-Minimalistas-para-Mesa-Estante-e-Sala-i.1420021654.58220268397",
+      "instagram_url": "",
+      "destaque": true,
+      "disponivel": true,
+      "ordem": 2,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/gnomo_dupla.png"
+      ]
+    },
+    {
+      "id": "kit-3-cactos",
+      "nome": "Kit 3 Cactos Decorativos",
+      "colecao_id": "casa",
+      "preco_brl": "",
+      "descricao_curta": "Três cactos decorativos com textura de tricô",
+      "descricao_completa": "Conjunto com três cactos, vasos de rosca e bandeja.",
+      "material": "Filamento de impressão 3D selecionado",
+      "dimensoes": "Consultar anúncio",
+      "cores": "4 opções no anúncio",
+      "shopee_url": "https://shopee.com.br/Cacto-Decora%C3%A7%C3%A3o-Linha-Premium-4-cores-Kit-3-Cactos-Decorativos-Tric%C3%B4-Minimalista-Vaso-Rosca-Bandeja-Sala-Escrit%C3%B3rio-i.1420021654.23499879426",
+      "instagram_url": "",
+      "destaque": true,
+      "disponivel": true,
+      "ordem": 3,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/cactos_trico.png"
+      ]
+    }
+  ],
+  "configuracoes": {
+    "nome_marca": "by FN",
+    "slogan": "Design para viver cada detalhe.",
+    "shopee_url": "https://shopee.com.br/carlosnishiyama",
+    "instagram_url": "https://www.instagram.com/byfn.lab/",
+    "whatsapp": "",
+    "email_suporte": "",
+    "hero_titulo": "Design para viver cada detalhe.",
+    "hero_descricao": "Objetos que unem design, personalidade e funcionalidade.",
+    "sobre_titulo": "Feito em família. Pensado em cada detalhe.",
+    "sobre_texto": "A by FN é uma marca familiar de objetos decorativos produzidos com materiais selecionados e atenção aos acabamentos."
+  }
+}
