@@ -313,7 +313,7 @@
 
       ${collectionsSection()}
 
-      <section class="section featured-section">
+      <section class="section featured-section" hidden>
         <div class="wrap">
 
           <div class="section-title">
@@ -698,8 +698,6 @@
   // INICIALIZAÇÃO DA INTERFACE
 
   function initializeUI() {
-    document.querySelector('#announcement').textContent =
-      data.marca.avisoTopo || data.marca.aviso || '';
 
     document.querySelector('#footerDescription').textContent =
       data.marca.assinatura || data.marca.slogan || '';

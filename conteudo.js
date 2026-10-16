@@ -16,8 +16,8 @@ window.BYFN = {
     imagemSobre: "imagens/familia.jpg"
   },
   redes: {
-    instagram: "", // endereço real do perfil
-    usuarioInstagram: "@byfn", // ajuste para o arroba real
+    instagram: "https://www.instagram.com/byfn.lab/", // endereço real do perfil
+    usuarioInstagram: "@byfn.lab", // ajuste para o arroba real
     shopee: "https://shopee.com.br/carlosnishiyama?entryPoint=ShopBySearch&searchKeyword=by%20fn",
     whatsapp: "", // 55 + DDD + número
     email: ""
