@@ -987,4 +987,6 @@
       banner.hidden = false;
     }
   }
+
+  boot();
 })();
