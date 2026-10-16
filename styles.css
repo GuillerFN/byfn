@@ -209,3 +209,5 @@ footer{background:#eeece6;padding:72px 0 28px}
 .featured-section[hidden] {
   display: none !important;
 }
+
+#headerInstagram{display:none!important}
