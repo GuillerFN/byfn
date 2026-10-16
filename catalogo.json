@@ -1,5 +1,6 @@
 {
   "sucesso": true,
+  "marca": "by FN",
   "colecoes": [
     {
       "id": "natalino",
@@ -15,14 +16,6 @@
       "descricao": "Design e decoração para diferentes ambientes",
       "imagem_url": "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/colecao_decoracao_casa.png",
       "ordem": 2,
-      "ativa": true
-    },
-    {
-      "id": "meninas",
-      "nome": "Decoração para Meninas",
-      "descricao": "Peças delicadas e criativas para decorar",
-      "imagem_url": "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/colecao_decoracao_menina.png",
-      "ordem": 3,
       "ativa": true
     }
   ],
