@@ -76,6 +76,177 @@
       "imagens": [
         "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/cactos_trico.png"
       ]
+    },
+    {
+      "id": "kit-gnomo-estrela-arvore",
+      "nome": "Kit Natalino 01",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Gnomo, estrela, árvore e base.",
+      "descricao_completa": "",
+      "material": "",
+      "dimensoes": "",
+      "cores": "",
+      "shopee_url": "",
+      "instagram_url": "",
+      "destaque": false,
+      "disponivel": true,
+      "ordem": 4,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/kit_gnomo_estrela_arvore.jpg"
+      ]
+    },
+    {
+      "id": "kit-anjos-estrela",
+      "nome": "Kit Natalino 02",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Anjos, estrela e base.",
+      "descricao_completa": "",
+      "material": "",
+      "dimensoes": "",
+      "cores": "",
+      "shopee_url": "",
+      "instagram_url": "",
+      "destaque": false,
+      "disponivel": true,
+      "ordem": 5,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/kit_anjos_estrela.jpg"
+      ]
+    },
+    {
+      "id": "kit-gnomo-arvores-estrela",
+      "nome": "Kit Natalino 03",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Gnomo, árvores, estrela e base.",
+      "descricao_completa": "",
+      "material": "",
+      "dimensoes": "",
+      "cores": "",
+      "shopee_url": "",
+      "instagram_url": "",
+      "destaque": false,
+      "disponivel": true,
+      "ordem": 6,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/kit_gnomo_arvores_estrela.jpg"
+      ]
+    },
+    {
+      "id": "kit-arvores",
+      "nome": "Kit Natalino 04",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Árvore cinza, árvore verde e árvore bege.",
+      "descricao_completa": "",
+      "material": "",
+      "dimensoes": "",
+      "cores": "",
+      "shopee_url": "",
+      "instagram_url": "",
+      "destaque": false,
+      "disponivel": true,
+      "ordem": 7,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/kit_arvores.jpg"
+      ]
+    },
+    {
+      "id": "kit-gnomos-estrela",
+      "nome": "Kit Natalino 05",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Gnomos, estrela e base.",
+      "descricao_completa": "",
+      "material": "",
+      "dimensoes": "",
+      "cores": "",
+      "shopee_url": "",
+      "instagram_url": "",
+      "destaque": false,
+      "disponivel": true,
+      "ordem": 8,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/kit_gnomos_estrela.jpg"
+      ]
+    },
+    {
+      "id": "kit-letreiro-estrela-arvores",
+      "nome": "Kit Natalino 06",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Letreiro, estrela e árvores.",
+      "descricao_completa": "",
+      "material": "",
+      "dimensoes": "",
+      "cores": "",
+      "shopee_url": "",
+      "instagram_url": "",
+      "destaque": false,
+      "disponivel": true,
+      "ordem": 9,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/kit_letreiro_estrela_arvores.jpg"
+      ]
+    },
+    {
+      "id": "kit-gnomos-arvore-estrela-anjo",
+      "nome": "Kit Natalino 07",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Gnomos, árvore, estrela, anjo e base.",
+      "descricao_completa": "",
+      "material": "",
+      "dimensoes": "",
+      "cores": "",
+      "shopee_url": "",
+      "instagram_url": "",
+      "destaque": false,
+      "disponivel": true,
+      "ordem": 10,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/kit_gnomos_arvore_estrela_anjo.jpg"
+      ]
+    },
+    {
+      "id": "quebra-nozes",
+      "nome": "Quebra-Nozes",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Quebra-nozes listrado verde, listrado bege, liso marrom e liso bege.",
+      "descricao_completa": "",
+      "material": "",
+      "dimensoes": "",
+      "cores": "",
+      "shopee_url": "",
+      "instagram_url": "",
+      "destaque": false,
+      "disponivel": true,
+      "ordem": 11,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/quebra_nozes.jpg"
+      ]
+    },
+    {
+      "id": "presepio",
+      "nome": "Presépio",
+      "colecao_id": "natalino",
+      "preco_brl": "",
+      "descricao_curta": "Presépio e base.",
+      "descricao_completa": "",
+      "material": "",
+      "dimensoes": "",
+      "cores": "",
+      "shopee_url": "",
+      "instagram_url": "",
+      "destaque": false,
+      "disponivel": true,
+      "ordem": 12,
+      "imagens": [
+        "https://raw.githubusercontent.com/GuillerFN/byfn/main/imagens/presepio.jpg"
+      ]
     }
   ],
   "configuracoes": {
