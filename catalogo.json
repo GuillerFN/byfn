@@ -22,7 +22,7 @@
   "produtos": [
     {
       "id": "gnomo-natalino",
-      "nome": "Gnomo Natalino Premium",
+      "nome": "Gnomo Natalino",
       "colecao_id": "natalino",
       "preco_brl": "",
       "descricao_curta": "Gnomo decorativo de 15 cm para o Natal",
@@ -64,7 +64,7 @@
       "colecao_id": "casa",
       "preco_brl": "",
       "descricao_curta": "Três cactos decorativos com textura de tricô",
-      "descricao_completa": "Conjunto com três cactos, vasos de rosca e bandeja.",
+      "descricao_completa": "",
       "material": "Filamento de impressão 3D selecionado",
       "dimensoes": "Consultar anúncio",
       "cores": "4 opções no anúncio",
